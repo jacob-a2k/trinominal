@@ -14,9 +14,7 @@ int main()
     cout << "Witaj! Podaj 3 liczby!" << endl;
     cin >> a >> b >> c;
 
-    float delta = b; //napisz wzór w jednej linii
-    delta = delta * b;
-    delta = delta - 4 * a * c;
+	float delta = b * b - 4 * a * c;
 
     float jeden = (- b) / (2 * a);
 
