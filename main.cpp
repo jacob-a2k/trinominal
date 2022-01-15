@@ -7,12 +7,10 @@
 
 using namespace std;
 
-float a, b, c; //zamień na zmienne lokalne
-//o co chodzi
 int main()
 {
 
-
+	float a, b, c; 
     cout << "Witaj! Podaj 3 liczby!" << endl;
     cin >> a >> b >> c;
 
