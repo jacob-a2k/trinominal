@@ -7,7 +7,7 @@
 
 using namespace std;
 
-float a, b, c;
+float a, b, c; //zamień na zmienne lokalne
 
 int main()
 {
