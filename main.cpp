@@ -8,7 +8,7 @@
 using namespace std;
 
 float a, b, c; //zamień na zmienne lokalne
-
+//o co chodzi
 int main()
 {
 
