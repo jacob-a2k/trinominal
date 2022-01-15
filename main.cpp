@@ -13,7 +13,7 @@ int main()
 	float a, b, c; 
     cout << "Witaj! Podaj 3 liczby!" << endl;
     cin >> a >> b >> c;
-
+	//obliczenie delty
 	float delta = b * b - 4 * a * c;
 
     float jeden = (- b) / (2 * a);
