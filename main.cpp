@@ -13,13 +13,13 @@ int main()
 
 	if ( a == 0 ){
         cout << "Wspolczynnik a nie moze byc rowny " << a << endl;
-	return 0;
+	return 0; //wcięcia w kodzie
 	}
 	
-  // nieporzebnie wykonujesz obliczenia
-  // jeżeli a = 0 to nie ma sensu wykowywać innych obliczeń itd
+  
+  
 	float delta = b * b - 4 * a * c;
-	
+	// nieporzebnie wykonujesz obliczenia trojmian nie zawsze ma dwa pierwiastki
 	float xOne = ((-b) - sqrt(delta)) / (2 * a); 
 
     float xTwo = ((-b) + sqrt(delta)) / (2 * a);
@@ -35,5 +35,5 @@ int main()
         cout << " Pierwszy pierwiastek wynosi: "<< xOne << endl;
         cout << " Drugi pierwiastek wynosi : "<< xTwo << endl;
 	}
-	return (0);
+	return (0); //niepotrzebne nawiasy w kodzie
 }	
