@@ -13,6 +13,7 @@ int main()
 
 	if ( a == 0 ){
         cout << "Wspolczynnik a nie moze byc rowny " << a << endl;
+		return 0;
 	}//wcięcia w kodzie
 	
 	float delta = b * b - 4 * a * c;
