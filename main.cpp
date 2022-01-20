@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main()
+void main()
 {
 
 	float a, b, c; 
@@ -13,7 +13,7 @@ int main()
 
 	if ( a == 0 ){
         cout << "Wspolczynnik a nie moze byc rowny " << a << endl;
-		return 0;
+		return;
 	}
 	
 	float delta = b * b - 4 * a * c;
@@ -32,5 +32,4 @@ int main()
 		float xTwo = ((-b) + sqrt(delta)) / (2 * a);
         cout << " Drugi pierwiastek wynosi : "<< xTwo << endl;
 	}
-	return 0;
 }	
