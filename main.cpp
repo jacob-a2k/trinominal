@@ -20,7 +20,7 @@ void main()
         cout << "Nie ma rozwiazan " << endl;
 	}
 	else if (delta == 0) {
-		float x1 = (- b) / (2 * a);
+		float x1 = (-b) / (2 * a);
         cout << "Pierwiastek wynosi: " << x1 << endl;
 	}
 	else {
