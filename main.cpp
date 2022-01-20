@@ -22,14 +22,14 @@ void main()
         cout << "Nie ma rozwiazan " << endl;
 	}
 	else if (delta == 0){
-		float deltaZero = (- b) / (2 * a);
-        cout << "Pierwiastek wynosi: " << deltaZero << endl;
+		float x1 = (- b) / (2 * a);
+        cout << "Pierwiastek wynosi: " << x1 << endl;
 	}
 	else {
-		float xOne = ((-b) - sqrt(delta)) / (2 * a); 
-        cout << " Pierwszy pierwiastek wynosi: "<< xOne << endl;
+		float x1 = ((-b) - sqrt(delta)) / (2 * a); 
+        cout << " Pierwszy pierwiastek wynosi: "<< x1 << endl;
 		
-		float xTwo = ((-b) + sqrt(delta)) / (2 * a);
-        cout << " Drugi pierwiastek wynosi : "<< xTwo << endl;
+		float x2 = ((-b) + sqrt(delta)) / (2 * a);
+        cout << " Drugi pierwiastek wynosi : "<< x2 << endl;
 	}
 }	
