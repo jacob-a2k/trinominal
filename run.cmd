@@ -1,3 +1,3 @@
-delete a.exe
+del a.exe
 g++ main.cpp
 a.exe
