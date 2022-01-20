@@ -25,7 +25,7 @@ void main()
 		float deltaZero = (- b) / (2 * a);
         cout << "Pierwiastek wynosi: " << deltaZero << endl;
 	}
-	else if (delta > 0){
+	else {
 		float xOne = ((-b) - sqrt(delta)) / (2 * a); 
         cout << " Pierwszy pierwiastek wynosi: "<< xOne << endl;
 		
