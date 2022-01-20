@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void main()
+int main()
 {
 	float a, b, c; 
     cout << "\nWitaj! Aby obliczyc pierwiastki trojmianu kwadratowego podaj wartosci a, b i c !" << endl;
@@ -11,7 +11,7 @@ void main()
 
 	if (a == 0) {
         cout << "Wspolczynnik a nie moze byc rowny " << a << endl;
-		return;
+		return 0;
 	}
 
 	float delta = b * b - 4 * a * c;
@@ -30,4 +30,5 @@ void main()
 		float x2 = ((-b) + sqrt(delta)) / (2 * a);
         cout << " Drugi pierwiastek wynosi : "<< x2 << endl;
 	}
+	return 0;
 }	
