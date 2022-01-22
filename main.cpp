@@ -10,7 +10,9 @@ int main()
     cin >> a >> b >> c;
 
 	while (a == 0) {
-        cout << "Wspolczynnik a nie moze byc rowny " << a << endl;
+		//nie musisz a wypisywaæ przecie¿ wiadomo jak¹ martoœæ
+		//skróæ komunikat
+        cout << "Wspolczynnik a nie moze byc rowny " << a << endl; 
 		cout << "\nPodaj inna wartosc a!" << endl;
 		cin >> a;
 	}
