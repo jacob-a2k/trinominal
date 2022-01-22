@@ -9,11 +9,12 @@ int main()
     cout << "\nWitaj! Aby obliczyc pierwiastki trojmianu kwadratowego podaj wartosci a, b i c !" << endl;
     cin >> a >> b >> c;
 
-	if (a == 0) {
+	while (a == 0) {
         cout << "Wspolczynnik a nie moze byc rowny " << a << endl;
-		return 0;
+		cout << "\nPodaj inna wartosc a!" << endl;
+		cin >> a;
 	}
-
+	
 	float delta = b * b - 4 * a * c;
 	
 	if (delta < 0) {
