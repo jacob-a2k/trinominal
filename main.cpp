@@ -6,11 +6,19 @@
 
 using namespace std;
 
-int main()
-{
-for(;;)
-{
-	float a, b, c;
+void trinominal();
+void choise();
+
+int main(){
+    
+    for(;;){
+    trinominal();
+
+    choise();
+    }
+}
+void trinominal(){
+    float a, b, c;
     cout << "\nWitaj! Aby obliczyc pierwiastki trojmianu kwadratowego podaj wartosci a, b i c !" << endl;
     cin >> a >> b >> c;
 
@@ -36,6 +44,9 @@ for(;;)
 		float x2 = ((-b) + sqrt(delta)) / (2 * a);
         cout << " Drugi pierwiastek wynosi : "<< x2 << endl;
 	}
+}
+void choise(){
+
     cout << endl;
 	cout << "Czy chcesz ponownie obliczyc pierwiastki trojmianu kwadratowego?";
 	cout << "\nWcisnij t aby ponownie dokonac obliczen!";
@@ -55,5 +66,4 @@ for(;;)
     default: cout << "Nie ma takiej opcji" << endl;
         exit(0);
 	}
-}
 }
