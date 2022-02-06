@@ -12,11 +12,16 @@ void choise();
 int main(){
     
     for(;;){
+		//wcięcia
     trinominal();
 
     choise();
     }
 }
+//nazwy funkcji to jakieś działania wiec powinny być wrazone jakims czasownikiem
+//nazwy fukcji powinny opisywać co ta funkcja robi
+//tak aby jak czytasz wywłoania tych że fukcji mógl sie domyslić co dzieje sie w tym programie
+//btw trójmian po angielsku to trinomial
 void trinominal(){
     float a, b, c;
     cout << "\nWitaj! Aby obliczyc pierwiastki trojmianu kwadratowego podaj wartosci a, b i c !" << endl;
@@ -52,11 +57,15 @@ void choise(){
 	cout << "\nWcisnij t aby ponownie dokonac obliczen!";
 	cout << "\nWcisnij n aby zakonczyc program!" << endl;
 
+    //dlaczego tego nie zniemiłeś? 
+	//tzn polska nazwa zmiennej 
+	//w osobnej linii delkalracjia i definicja 
     char wybor;
 	wybor = getch();
 
 	switch(wybor){
     case 't':
+		//dlaczego tego nie zniemiłeś? system cls do wyrzucenia?
         system("cls");
     break;
     case 'n':
