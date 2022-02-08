@@ -6,23 +6,17 @@
 
 using namespace std;
 
-void trinominal();
-void choise();
+void trinomial_calculations();
+void choice();
 
 int main(){
-    
-    for(;;){
-		//wcięcia
-    trinominal();
 
-    choise();
+    for(;;){
+		trinomial_calculations();
+		choice();
     }
 }
-//nazwy funkcji to jakieś działania wiec powinny być wrazone jakims czasownikiem
-//nazwy fukcji powinny opisywać co ta funkcja robi
-//tak aby jak czytasz wywłoania tych że fukcji mógl sie domyslić co dzieje sie w tym programie
-//btw trójmian po angielsku to trinomial
-void trinominal(){
+void trinomial_calculations(){
     float a, b, c;
     cout << "\nWitaj! Aby obliczyc pierwiastki trojmianu kwadratowego podaj wartosci a, b i c !" << endl;
     cin >> a >> b >> c;
@@ -50,24 +44,19 @@ void trinominal(){
         cout << " Drugi pierwiastek wynosi : "<< x2 << endl;
 	}
 }
-void choise(){
+void choice(){
 
     cout << endl;
 	cout << "Czy chcesz ponownie obliczyc pierwiastki trojmianu kwadratowego?";
 	cout << "\nWcisnij t aby ponownie dokonac obliczen!";
 	cout << "\nWcisnij n aby zakonczyc program!" << endl;
 
-    //dlaczego tego nie zniemiłeś? 
-	//tzn polska nazwa zmiennej 
-	//w osobnej linii delkalracjia i definicja 
-    char wybor;
-	wybor = getch();
+    char option = getch();
 
-	switch(wybor){
+	switch(option){
     case 't':
-		//dlaczego tego nie zniemiłeś? system cls do wyrzucenia?
-        system("cls");
     break;
+
     case 'n':
         exit(0);
     break;
