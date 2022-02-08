@@ -62,6 +62,8 @@ void choice(){
     break;
 
     default: cout << "Nie ma takiej opcji" << endl;
-        exit(0);
+        exit(0);//tutaj w sumie jest blad 'n' jest tożsame z dowolnym znakiem 
+		//wiec ty nie powino być zakończenia
+		//tylko defakto ponowna proba pobrania znaku
 	}
 }
