@@ -6,17 +6,17 @@
 
 using namespace std;
 
-void trinomial_calculations();
-void choice();
+void calculate_trinomial_roots();
+void choose_whether_once_more();
 
 int main(){
 
     for(;;){
-		trinomial_calculations();
-		choice();
+		calculate_trinomial_roots();
+		choose_whether_once_more();
     }
 }
-void trinomial_calculations(){
+void calculate_trinomial_roots(){
     float a, b, c;
     cout << "\nWitaj! Aby obliczyc pierwiastki trojmianu kwadratowego podaj wartosci a, b i c !" << endl;
     cin >> a >> b >> c;
@@ -44,26 +44,20 @@ void trinomial_calculations(){
         cout << " Drugi pierwiastek wynosi : "<< x2 << endl;
 	}
 }
-void choice(){
+void choose_whether_once_more(){
 
     cout << endl;
-	cout << "Czy chcesz ponownie obliczyc pierwiastki trojmianu kwadratowego?";
-	cout << "\nWcisnij t aby ponownie dokonac obliczen!";
-	cout << "\nWcisnij n aby zakonczyc program!" << endl;
+    cout << "Czy chcesz ponownie obliczyc pierwiastki trojmianu kwadratowego?";
+    cout << "\nWcisnij t aby ponownie dokonac obliczen!";
+    cout << "\nWcisnij n aby zakonczyc program!" << endl;
 
     char option = getch();
-
-	switch(option){
-    case 't':
-    break;
-
-    case 'n':
-        exit(0);
-    break;
-
-    default: cout << "Nie ma takiej opcji" << endl;
-        exit(0);//tutaj w sumie jest blad 'n' jest tożsame z dowolnym znakiem 
-		//wiec ty nie powino być zakończenia
-		//tylko defakto ponowna proba pobrania znaku
-	}
+    while(option != 't'){
+        if(option == 't');
+        else if(option == 'n')
+            exit(0);
+        else
+            cout << "Nie ma takiej opcji" << endl;
+            cin >> option;
+    }
 }
