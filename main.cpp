@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <conio.h>
+#include <limits.h>
 
 using namespace std;
 
@@ -17,15 +18,39 @@ int main(){
     }
 }
 void calculate_trinomial_roots(){
+
     float a, b, c;
-    cout << "\nWitaj! Aby obliczyc pierwiastki trojmianu kwadratowego podaj wartosci a, b i c !" << endl;
-    cin >> a >> b >> c;
+            cout << "\nWitaj! Aby obliczyc pierwiastki trojmianu kwadratowego podaj wartosci a, b i c !" << endl;
+            cin >> a >> b >> c;
+
+    while(!cin.good()){
+
+        cout << "Niepoprawne dane! Spobuj ponownie! " << "\n";
+
+        cin.clear();
+        cin.ignore(INT_MAX, '\n');
+
+        cout << "\nWitaj! Aby obliczyc pierwiastki trojmianu kwadratowego podaj wartosci a, b i c !" << endl;
+        cin >> a >> b >> c;
+    }
+
 
 	while (a == 0) {
         cout << "Wspolczynnik a nie moze byc rowny 0\n";
 		cout << "\nPodaj inna wartosc a!" << endl;
 		cin >> a;
+		while(!cin.good()){
+            cout << "Niepoprawne dane! Spobuj ponownie! " << "\n";
+
+            cin.clear();
+            cin.ignore(INT_MAX, '\n');
+
+            cout << endl;
+            cout << "Podaj wartosc a!" << endl;
+            cin >> a;
+		}
 	}
+
 
 	float delta = b * b - 4 * a * c;
 
@@ -54,10 +79,12 @@ void choose_whether_once_more(){
     char option = getch();
     while(option != 't'){
         if(option == 't');
-        else if(option == 'n')
+        else if(option == 'n'){
             exit(0);
-        else
+        }
+        else{
             cout << "Nie ma takiej opcji" << endl;
             cin >> option;
+        }
     }
 }
